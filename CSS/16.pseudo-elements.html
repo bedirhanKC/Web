@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .para1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+        .para1::first-line{
+            color: red;
+        }
+        .para1::first-letter{
+            color: blue;
+            font-size: 3em;
+        }
+        .para1::after{
+            content: url("https://cdn-icons-png.flaticon.com/512/56/56786.png");
+        }
+    </style>
+</head>
+<body>
+    <p class="para1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam doloremque voluptas, nostrum necessitatibus qui dolor optio quis iure totam, odio quaerat cum expedita! Commodi quidem cumque porro sequi distinctio tempora impedit enim. Reiciendis possimus dignissimos et nesciunt! Fugiat recusandae quaerat rerum natus nobis quos non numquam placeat nihil quo repudiandae dolorem labore minus voluptatum officiis explicabo aliquam ab, velit, accusamus enim nostrum hic. Pariatur culpa autem suscipit amet. Possimus, doloremque est minima odio nulla doloribus a nesciunt ut aperiam totam voluptate! Eaque assumenda est minus iste repudiandae, dolorum fugiat. Saepe voluptates magnam ex, earum cupiditate dolore non itaque distinctio laudantium.
+    </p>
+</body>
+</html>

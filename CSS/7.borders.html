@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border & Radius</title>
+
+    <style>
+        #box-1{
+
+            /* border-left: 5px blue solid; */
+            /* sadece bir kenarı ayarlamak için bu şekilde kullanılır */
+
+            border: 10px blue solid;
+            border-radius: 10px;
+
+            /* border: 5px red solid; */
+            /* shorthand */
+
+            /* background: #a7a7a7;
+            border-width: 5px;
+            border-color: red;
+            border-style: solid; */
+        }
+        #box-2{
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            /* radius değeri ile height değeri aynı olursa tam bir daire elde edilir */
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box-1">
+        <h1>Box-1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, velit.</p>
+    </div>
+
+    <div id="box-2"></div>
+
+</body>
+</html>

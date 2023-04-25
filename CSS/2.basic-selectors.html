@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+
+    <style>
+
+        /* 
+        tüm h1leri seç
+        h1{
+            color: antiquewhite;
+            background: black;
+        }
+
+         tüm paragrafları seçme 
+        p{
+            color: rebeccapurple;
+            background: antiquewhite;
+        } 
+        
+         h1 ve p'leri alma 
+         h1,p{
+
+            color: antiquewhite;
+            background: black;
+
+        } 
+        */
+        
+        #logo{ /*id'si olanları bulmak için # işareti kullanılır*/
+
+            color: antiquewhite;
+            background: black;
+
+        }
+        
+        .info{ /*class'ı olanları bulmak için . işareti kullanılır*/
+            color: black;
+            background: antiquewhite;
+        }
+
+        #para1.info{ /*hem id'si para1 olan hem de class'ı info olanların style'ını belirlemek için bu şekilde kullanılır*/
+            color:red;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        ul li a{ /*ul'in içindeki, li'nin içindeki, a etiketi için ayarlamalar yapımı bu şekildedir*/
+            color: aqua;
+            background: black;         
+        }
+        
+        .info span{ /* class'ı info olanların altındaki spanleri ayarlama*/
+            color: red;
+        }
+
+        .info .primary{
+            color: blue;
+        }
+
+        *{  /*evrensel seçici; bütün elemanları seçer*/
+            font-size: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+        <h1>Header 1</h1>
+        <h1 id="logo">LOGO</h1>
+
+        <ul>
+
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+
+        </ul>
+
+    </header>
+
+    <h1>Header 2</h1>
+
+    <p id="para1" class="lead info">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum ad laudantium veniam beatae neque temporibus illum magni nobis fuga excepturi, placeat ut saepe dolorem odit dolore debitis nesciunt aspernatur atque!
+    </p>
+    
+    <p class="info">
+        Lorem ipsum dolor sit amet <span class="primary">consectetur</span> adipisicing elit. Molestiae architecto ut ipsam eligendi quibusdam dolorum omnis sint dignissimos praesentium, quod eum maxime sed debitis similique, soluta consequatur aperiam quae labore.
+    </p>
+
+    <p class="info">
+        Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Sed non doloremque eaque voluptate impedit delectus, porro accusamus praesentium! Facilis sapiente nostrum saepe quis assumenda, quae ad sint libero possimus ipsam.
+    </p>
+
+    <p>Test paragraph</p>
+
+    <a href="#">Home</a>
+
+</body>
+</html>

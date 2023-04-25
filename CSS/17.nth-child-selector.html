@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Child Selector</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        p{
+            font-size: 1.5em;
+        }
+        p:nth-child(1){
+            color: red;
+        }
+        p:last-child{
+            color: aqua;
+        }
+        p:nth-child(2n){
+            background-color: rebeccapurple;
+        }
+        p:nth-child(2n+1){
+            background-color: burlywood;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, odit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, odit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, odit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, odit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, odit.</p>
+</body>
+</html>

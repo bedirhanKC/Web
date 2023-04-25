@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class(State)</title>
+
+    <style>
+        /* 
+        selector : pseudo_class{
+
+        }
+        */
+        a#test{
+            font-size: 24px;
+        }
+        a#test:link{
+        /* henüz tıklanmadı */
+            color: aqua;
+        }
+        a#test:visited{
+            /* tıklandı */
+            color: gray;
+        }
+        a#test:hover{
+            /* üzerine gelindi */
+            color: red;
+        }
+        a#test:active{
+            color: purple;
+        }
+        input{
+            font-size: 1.5em;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        input:focus{
+            outline: 0;
+            border: 2px solid burlywood;
+        }
+
+        a#facebook{
+            color: white;
+            background-color: blue;
+            border: 1px solid black;
+            display: inline-block;
+            font-size: 1.5em;
+            border-radius: 7px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        a#facebook:hover{
+            background-color: rgb(0, 0, 197);
+        }
+    </style>
+</head>
+<body>
+    <a id="test" href="#">Link</a> <br>
+    <input type="text" name="name" id="name" placeholder="name">
+    <a id="facebook" href="#">Facebook</a>
+</body>
+</html>

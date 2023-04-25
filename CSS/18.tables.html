@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Styling</title>
+
+    <style>
+        table,tr,td,th{
+            border-collapse: collapse;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            border-radius: 10px;
+        }
+        table{
+            width: 75%;
+            margin: auto;
+            font-size: 1.5em;
+
+        }
+        th,td{
+            padding: 10px;
+        }
+        thead tr{
+            background-color: greenyellow;
+        }
+        tbody tr{
+            text-align: center;
+        }
+        tbody tr:nth-child(2n){
+            background-color: rgb(198, 198, 198);
+        }
+        tbody tr:nth-child(2n+1){
+            background-color: rgb(228, 228, 228);
+        }
+        tbody tr:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table class="employees">
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Departman</th>
+                <th>Maaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bedirhan</td>
+                <td>Kömürcü</td>
+                <td>16000</td>
+            </tr>
+            <tr>
+                <td>Bedirhan</td>
+                <td>Kömürcü</td>
+                <td>16000</td>
+            </tr>
+            <tr>
+                <td>Bedirhan</td>
+                <td>Kömürcü</td>
+                <td>16000</td>
+            </tr>
+            <tr>
+                <td>Bedirhan</td>
+                <td>Kömürcü</td>
+                <td>16000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

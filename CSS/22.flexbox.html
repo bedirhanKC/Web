@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container-1{
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            /* flexbox haline getirilir */
+            flex-direction: row;
+            /* flex direction, nasıl sıralanacağını belirler. Row->satır. column->sütun */
+            height: 600px;
+            background-color: burlywood;
+            justify-content:flex-end;
+            justify-content: space-between;
+            justify-content: space-around;   
+            justify-content: center;
+            align-items: center;
+            /* yatayda sıralamanın nasıl ayarlanacağını belirlemek için justify-content kullanılır */
+        }
+        .container-1 .box{
+            text-align: center;
+            background-color: bisque;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid rgb(110, 40, 0);
+        }
+        .container-2{
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            min-height: 600px;
+            background-color: black;
+            justify-content: center;
+            align-items: stretch;
+            /* sütun boyunca içeriğin kaplamasını sağlar */
+            align-items: center;
+            /* sütünü ortalar ve sadece content kadar yer kaplar */
+            flex-wrap: wrap;
+            /* wrap olarak ayarlanırsa, eğer boxlar sığmazsa, boyut küçültmek yerine alt satıra geçer */
+            flex-direction: column;
+            /* dikeyleri yatay yatayları dikey yapmak için kullanılır */
+            
+        }
+        .container-2 .box{
+            text-align: center;
+            background-color: bisque;
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+            margin: 10px;
+        }
+        .container-1 .box-1{
+            flex-grow: 1;
+            /* flexgrow, doldurma oranıdır */
+        }
+        .container-1 .box-2{
+            flex-grow: 2;
+            align-self: flex-end;
+            /* boxa şahsi olarak konumlandırma bu şekilde yapılır */
+        }
+        .container-1 .box-3{
+            flex-grow: 3;
+            /* flex-grow:3; yerine flex:1; de kullanılabilir */
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex Container -->
+    <div class="container-1">
+        <div class="box box-1">
+            <h1>Article 1</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, repellendus!
+        </div>
+        <div class="box box-2">
+            <h1>Article 2</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, repellendus!
+        </div>
+        <div class="box box-3">
+            <h1>Article 3</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, repellendus!
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container-2">
+        <div class="box box-1">
+            <h1>Article 1</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, repellendus!
+        </div>
+        <div class="box box-2">
+            <h1>Article 2</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, repellendus!
+        </div>
+        <div class="box box-3">
+            <h1>Article 3</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, repellendus!
+        </div>
+    </div>
+</body>
+</html>
