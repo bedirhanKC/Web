@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Panel Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-circle-notch"></i>Devinant Library</a>
+        <nav class="main-nav">
+            <a href="#" class="main-nav-buttons">Home</a>
+            <a href="#" class="main-nav-buttons">About</a>
+            <a href="#" class="main-nav-buttons">Reviews</a>
+            <a href="#" class="main-nav-buttons">Contact</a>
+            <a href="#" class="main-nav-buttons login-button">Login</a>
+        </nav>
+    </div>
+    <div class="login-panel">
+            <h2><i class="fa-solid fa-circle-notch"></i><br>Login</h2>
+            <form action="">
+                <div class="input-box panel-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="text" required>
+                    <label>E-mail</label>
+                </div>
+                <div class="input-box panel-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" class="checkbox" style="display: inline;" >  Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="button">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Make an application</a></p>
+                </div>
+            </form>
+    </div>
+
+</body>
+</html>
